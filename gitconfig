@@ -1,0 +1,14 @@
+[user]
+	name = <<GITHUB USERNAME>>
+	email = <<GITHUB EMAIL>>
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = code --wait
+[commit]
+	template = ~/.gitmessage
